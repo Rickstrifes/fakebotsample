@@ -3,7 +3,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
 }
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #222222;
+}
+
+li {
+    display: flex;
+    padding: 12px;
+    list-style-type: none;
+}
+
+li > a {
+    color: gray;
+    text-decoration: none;
+}
+
+li > a:hover {
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
 
 .container {
     width: 500px;
@@ -83,4 +109,18 @@ input {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.aboutWrapper {
+    display: flex;
+    gap: 40px;
 }
